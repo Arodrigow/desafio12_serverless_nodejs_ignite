@@ -18,7 +18,7 @@ export const handle: APIGatewayProxyHandler = async (event) => {
             user_id: userid,
             title,
             done: false,
-            deadline: new Date(deadline)
+            deadline: new Date(deadline).toDateString(),
         }
     }).promise();
 
